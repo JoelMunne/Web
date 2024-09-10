@@ -10,17 +10,18 @@
     text-decoration: none;
 }
 :root{
-    --colorPrincipal: #00b9c5;
-    --colorTexto: #fff;
+    --colorBlau: #00b9c5;
+    --colorBlanc: #fff;
     --colorFondo: #d3d3d3;
-    --colorFondo2: #000;
+    --colorNegre: #000;
+    --colorVermell: #e07e7e;
     --funteGrande: 3.2rem;
     --fuente-h2: 1.30rem;
     --fuente-p: .9rem;
 }
 
 body{
-    color: var(--colorTexto);
+    color: var(--colorBlanc);
 }
 
 
@@ -47,4 +48,35 @@ header{
     width: 120px;
     height: auto;
     border-radius: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.menu .accedir{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--colorVermell);
+    color: var(--colorNegre);
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.menu .accedir:hover{
+transform: scale(1.2);
+}
+
+.menu .alta{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--colorBlau);
+    color: var(--colorBlanc);
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.menu .alta:hover{
+transform: scale(1.2);
 }
