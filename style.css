@@ -13,6 +13,7 @@
     --colorPrincipal: #00b9c5;
     --colorTexto: #fff;
     --colorFondo: #d3d3d3;
+    --colorFondo2: #000;
     --funteGrande: 3.2rem;
     --fuente-h2: 1.30rem;
     --fuente-p: .9rem;
@@ -20,10 +21,10 @@
 
 body{
     color: var(--colorTexto);
-    background: var(--colorFondo);
 }
 
-/*header{
+
+header{
     position: fixed;
     top: 0;
     right: 0;
@@ -34,7 +35,13 @@ body{
     justify-content: space-between;
     padding: 10px 160px;
     background-color: var(--colorFondo);
-}*/
+}
+
+.fons{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+}
 
 .logo{
     width: 120px;
