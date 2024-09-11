@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --colorBlau: #00b9c5;
+    --colorBlanc: #fff;
+    --colorFondo: #d3d3d3;
+    --colorNegre: #000;
+    --colorVermell: #e07e7e;
+    --funteGrande: 3.2rem;
+    --fuente-h2: 1.30rem;
+    --fuente-p: .9rem;
+}
+
+body{
+    color: var(--colorNegre);
+    background-color: var(--colorBlanc);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.buscar {
+ padding: 15px 25px;
+    background-color: var(--colorBlau);
+    color: var(--colorBlanc);
+    border-radius: .5rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    width: auto; /* Asegura que el ancho se ajuste al contenido */
+    max-width: 300px; /* Limita el ancho máximo del botón */
+}
+
+.buscar:hover{
+    transform: scale(1.2);
+    }
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 160px;
+    background-color: var(--colorFondo);
+}
+
+.logo{
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.menu .accedir{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--colorVermell);
+    color: var(--colorNegre);
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.menu .accedir:hover{
+transform: scale(1.2);
+}
+
+.menu .alta{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--colorBlau);
+    color: var(--colorBlanc);
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.menu .alta:hover{
+transform: scale(1.2);
+}
